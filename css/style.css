@@ -1,0 +1,829 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* font-size: 10rem; */
+    font-size: 62.5%;
+  }
+  
+  body {
+    overflow-x: hidden;
+    font-family: poppins;
+    text-decoration: none;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+  }
+  
+  .header {
+    padding: 2rem;
+  }
+  
+  
+  .logo {
+    height: 3rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  
+  }
+  .inside-logo {
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    background-color: #4c6ef5;
+    color: #fff;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .logo-text {
+    color: #4c6ef5;
+    font-size: medium;
+  }
+  
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    background-color: #fff ;
+  
+  
+  }
+  .main-nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+.main-nav-link {
+    color: #555;
+    font-size: 1.5rem;
+}
+
+.log-in {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid #4c6ef5;
+    color: #4c6ef5;
+}
+
+.sign-up {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: #4c6ef5;
+    color: #fff;
+
+}
+
+.online-learning {
+  background-color: #f1f3f5;
+}
+
+.online-learning-content {
+    position: relative;
+}
+
+.online-learning-heading {
+   
+    font-size: 4rem;
+    font-weight: 700;
+    color: #111;
+
+}
+
+.get-started {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.get-started-button {
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    background-color: #4c6ef5;
+    color: #fff;
+}
+
+.play-button ion-icon {
+    height: 3rem;
+    width: 3rem;
+    color: #ffd43b;
+}
+
+.play-video {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.verification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.verification-content {
+    display: flex;
+    align-items: center;
+}
+
+.verification-content ion-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #4c6ef5;
+}
+
+.deco1 {
+    position: absolute;
+    background: #5637b0;
+    width: 2rem;
+    height: 0.5rem;
+    top: 5%;
+    right: 0;
+}
+.deco2 {
+    position: absolute;
+    background: #5637b0;
+    width: 2rem;
+    height: 0.5rem;
+    top: 10%;
+    right: 0;
+
+}
+.deco3 {
+    position: absolute;
+    background: #5637b0;
+    width: 2rem;
+    height: 0.5rem;
+    top: 15%;
+    right: 0;
+    transform: rotateX(45);
+
+
+}
+
+.online-learning-images {
+    position: relative;
+    display: flex;
+    height: 50rem;
+}
+
+.online-learning-image1, .online-learning-image2 {
+    width: 40%;
+    height: 60%;
+}
+
+.online-learning-image1 {
+    align-self: flex-start;
+    background-color: #f76707;
+    border-radius: 20rem;
+}
+
+.online-learning-image1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid #333;
+    width: 40%;
+    height: 60%;
+    left: 5%;
+    bottom:5%;
+    border-radius: 20rem;
+    z-index: 1;
+
+}
+
+ .online-learning-image2 {
+    align-self: flex-end;
+    background-color: #1098ad;
+    border-radius: 20rem;
+ }
+
+ .online-learning-image1::after {
+    content: "";
+    
+}
+
+ .circle1 {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    left: 50%;
+    bottom: 70%;
+    background: #ffd43b;
+    border-radius: 50%;
+
+ }
+
+ .circle1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  left: 7%;
+  bottom: 0;
+  border: 1px solid #333;
+  border-radius: 50%;
+
+ } 
+
+ .circle2 {
+    position: absolute;
+    background: #5637b0;
+    left: 10%;
+    bottom: 10%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+ }
+
+ .circle2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  left: 7%;
+  bottom: 0;
+  border: 1px solid #333;
+  border-radius: 50%;
+  z-index: 1;
+
+ } 
+
+.circle3 {
+  position: absolute;
+  background: #1098ad;
+  left: 73%;
+  bottom: 70%;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+
+} 
+
+.circle4 {
+  position: absolute;
+  background: #f76707;
+  left: 0;
+  bottom: 30%;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+
+}
+
+.why-online-learning {
+  background-color: #fff;
+  position: relative;
+  z-index: -2;
+
+}
+
+.why-online-learning-heading {
+  font-size: 2.4rem;
+  color: #111;
+}
+
+.why-online-learning-start {
+  line-height: 3;
+  
+}
+
+.why-online-learning::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 13rem;
+  height: 13rem;
+  left: 0;
+  bottom: 45%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: #f1f3f5;
+  z-index: -1;
+
+}
+
+
+.why-online-learning-content {
+  margin-bottom: 2rem;
+}
+
+.circle5 {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  left: 3%;
+  bottom: 20%;
+  background: #ffd43b;
+  border-radius: 50%;
+
+}
+
+.circle6 {
+  position: absolute;
+  background: #1098ad;
+  left: 9%;
+  bottom: 17%;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+
+}
+
+
+
+.online-attribute {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.online-attribute ion-icon {
+  padding: 1rem;
+  background-color: #f8f0fc;
+  color: #862e9c;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+
+}
+
+
+
+/************HELP YOU LEARN WITH ONLINE CLASSES*******/
+
+.help-you-learn {
+  background-color: #4c6ef5;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.online-subject {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  padding-bottom: 3rem;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  position: relative;
+  z-index: 1;
+
+}
+
+.online-subject::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 2px solid #333;
+  padding-bottom: 3rem;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  width: 100%;
+  height: 40rem;
+  left: 5%;
+  bottom: 5%;
+
+}
+
+
+.help-you-learn-heading {
+  color: #fff;
+  text-align: center;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4.5rem;
+
+}
+
+.online-subject-img {
+  width: 100%;
+  height: 60%;
+}
+
+.online-subject-theory {
+  padding: 0 2rem;
+}
+
+.design-rating {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
+.design {
+  padding: 0.3rem 1rem;
+  color: #1098ad;
+  border-radius: 1rem;
+  background-color: #e3fafc;
+}
+
+
+
+.rating {
+  color: #ffd43b;
+}
+
+.star {
+  width: 6rem;
+  height: 6rem;
+}
+
+.online-subject-heading {
+  font-size: 2.1rem;
+  font-weight: 700;
+
+}
+
+
+.online-subject-commenting {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+
+}
+
+
+.subject-profile {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.view {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    
+    /* box-shadow: 0px 5px 40px 5px rgba(108 0px 5px 40px 5px rgba(108, 96, 224, 0.15); */
+}
+
+.members {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.members ion-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #4c6ef5;
+}
+
+.see-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.see-details-btn {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: #4c6ef5;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.see-details-words span {
+  font-size: 1.4rem;
+  color: #4c6ef5;
+  font-weight: 600;
+}
+
+.help-you-learn-icons ion-icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  color: #4c6ef5;
+  border-radius: 50%;
+ 
+}
+
+.help-you-learn-icons {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  
+}
+
+.circle7 {
+  position: absolute;
+  background: #ffd43b;
+  left: 10%;
+  bottom: 55%;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.circle7::after {
+content: "";
+display: block;
+position: absolute;
+width: 10rem;
+height: 10rem;
+left: 0;
+bottom: 7%;
+border: 1px solid #333;
+border-radius: 50%;
+z-index: 1;
+
+} 
+
+.circle8 {
+  position: absolute;
+  background: #f76707;
+  left: 83%;
+  bottom: 55%;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.circle8::after {
+content: "";
+display: block;
+position: absolute;
+width: 10rem;
+height: 10rem;
+left: 0;
+bottom: 7%;
+border: 1px solid #333;
+border-radius: 50%;
+z-index: 1;
+
+} 
+
+.circle9 {
+  position: absolute;
+  background: #f76707;
+  left: 0;
+  bottom: 40%;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 10rem 10rem 0 0;
+  transform: rotate(90deg);
+}
+
+
+.circle10 {
+  position: absolute;
+  background: #1098ad;
+  right: 0;
+  bottom: 40%;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 0 0 10rem 10rem;
+  transform: rotate(90deg);
+}
+
+
+/***********BENEFITS OF LEARNING ONLINE************/
+
+.benefits-of-learning-list {
+  /* display: flex;
+  flex-direction: column;
+  gap: 2rem; */
+}
+
+.benefits-of-learning-item {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+
+}
+
+.benefits-of-learning-item ion-icon {
+ 
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  background-color: #ffd43b;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+
+.benefits-of-learning-item p {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.benefits-of-learning-img {
+  clip-path: polygon(10% 30%, 90% 5%, 100% 80%, 20% 100%);
+
+}
+
+.benefits-of-learning-img img {
+  width: 50rem;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.quotes {
+  position: absolute;
+ ;
+  padding: 1rem;
+  background-color: #5637b0;
+}
+
+.quotes i {
+  color: #fff;
+  width: 2.4rem;
+  height: 2.4rem;
+  
+}
+
+
+/************WHAT STUDENTS SAY ABOUT US***********/
+
+.profile {
+  width: 6rem;
+  height: 6rem;
+
+}
+
+.profile-info {
+  display: flex;
+  gap: 0.1rem;
+  flex-direction: column;
+
+}
+
+
+/********JOIN NOW CONTAINER********/
+
+.join-now-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem;
+  border-radius: 10rem;
+  background-color: #4c6ef5;
+  margin: 0 7rem;
+  z-index: -2;
+}
+
+.join-now-heading {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.join-now-heading::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  left: 0;
+  top: -10%;
+  border: 1px solid #333;
+  border-radius: 50%;
+  z-index: 1;
+  
+  }
+
+.join-now-heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  left: 0;
+  bottom: 7%;
+  border: 1px solid #333;
+  border-radius: 50%;
+  z-index: 1;
+  
+  }
+  .circle11 {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    right: 1%;
+    bottom: 30%;
+    background: #ffd43b;
+    border-radius: 50%;
+    z-index: -2;
+
+ }
+
+ .circle11::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  left: 7%;
+  bottom: 0;
+  border: 1px solid #333;
+  border-radius: 50%;
+
+ } 
+
+.email-address-one {
+  position: relative;
+}
+
+.email-address-one input {
+  padding: 2rem;
+  border-radius: 3rem;
+  border: 2px solid #333;
+  width: 50rem;
+}
+
+.email-address-one a {
+  position: absolute;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  background-color: #4c6ef5;
+  right: 5%;
+  top: 20%;
+}
+
+/**********FOOTER**********/
+
+
+
+.email-address-two {
+  position: relative;
+}
+
+.email-address-two input {
+  padding: 1.5rem;
+  border-radius: 3rem;
+  border: 2px solid #333;
+  width: 100%;
+}
+
+.email-address-two ion-icon {
+  position: absolute;
+  padding: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #4c6ef5;
+  color: #fff;
+  border-radius: 50%;
+  transform: translate(0,-50);
+  right: 5%;
+  top: 20%;
+
+}
+
+.learning {
+  line-height: 1.6;
+}
+
+.footer, .logo {
+  margin-bottom: 2rem;
+}
+
+.social-icon {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+
+}
+
+.footer p {
+  font-size: 1.4rem;
+  color: #888;
+  padding: 1rem 0;
+}
+
+.social-icon ion-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
