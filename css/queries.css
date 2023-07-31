@@ -147,6 +147,11 @@ body {
     font-size: 1.4rem;
 }
 
+.main-nav {
+    margin: 0;
+    padding: 0;
+}
+
 
 .header {
     padding: 1rem;
@@ -159,7 +164,7 @@ body {
     }
 
 .logo-text {
-    font-size: x-small;
+    font-size: small;
     }
 
 .main-nav-list {
@@ -247,5 +252,7 @@ font-size: 1rem;
 .follow-us {
     grid-template-columns: 1 -1;
 }
+
+
 
 }
