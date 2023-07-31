@@ -1,27 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
   
-  html {
-    /* font-size: 10rem; */
-    font-size: 62.5%;
-  }
-  
-  body {
-    overflow-x: hidden;
-    font-family: poppins;
-    text-decoration: none;
-    line-height: 1.5;
-    font-weight: 400;
-  }
-  
-  a:link,
-  a:visited,
-  a:active {
-    text-decoration: none;
-  }
   
   .header {
     padding: 2rem;
@@ -29,7 +6,7 @@
   
   
   .logo {
-    height: 3rem;
+    /* height: 3rem; */
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -49,6 +26,7 @@
   .logo-text {
     color: #4c6ef5;
     font-size: medium;
+    font-weight: 700;
   }
   
   .main-nav {
@@ -60,6 +38,7 @@
   
   
   }
+
   .main-nav-list {
     list-style: none;
     display: flex;
@@ -69,8 +48,20 @@
   }
 
 .main-nav-link {
-    color: #555;
-    font-size: 1.5rem;
+  color: #555;
+  font-size: 1.5rem;
+   
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #4c6ef5;
+}
+
+.nav-active {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .log-in {
@@ -87,6 +78,27 @@
     color: #fff;
 
 }
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #4c6ef5;
+} 
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+
+/************online learning**********/
+
 
 .online-learning {
   background-color: #f1f3f5;
@@ -139,41 +151,58 @@
 .verification-content {
     display: flex;
     align-items: center;
+    gap: 2rem;
+    
 }
 
 .verification-content ion-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    color: #4c6ef5;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #4c6ef5;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: #fff;
 }
 
 .deco1 {
     position: absolute;
     background: #5637b0;
-    width: 2rem;
-    height: 0.5rem;
+    width: 3rem;
+    height: 1rem;
     top: 5%;
     right: 0;
+    border-radius: 50% 50% 20% 30%;
+    transform: rotate(160deg);
 }
 .deco2 {
     position: absolute;
     background: #5637b0;
-    width: 2rem;
-    height: 0.5rem;
+    width: 3rem;
+    height: 1rem;
     top: 10%;
     right: 0;
+    border-radius: 59% 41% 45% 55% / 11% 13% 87% 89%;
 
 }
 .deco3 {
     position: absolute;
     background: #5637b0;
-    width: 2rem;
-    height: 0.5rem;
+    width: 3rem;
+    height: 1rem;
     top: 15%;
     right: 0;
-    transform: rotateX(45);
+    border-radius: 0.9rem / 50% 50% 20% 30%;
+    transform: rotate(30deg);
 
+}
 
+.deco4 {
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+  background-color: #ffd43b;
+  top: 30%;
+  border-radius: 50% / 87% 89% 0% 0% ;
 }
 
 .online-learning-images {
@@ -183,29 +212,43 @@
 }
 
 .online-learning-image1, .online-learning-image2 {
-    width: 40%;
-    height: 60%;
+    width: 80%;
+    height: 30rem;
+    z-index: 1;
+    
+}
+
+.image1 {
+  align-self: flex-start;
+  position: relative;
+  z-index: 1;
 }
 
 .online-learning-image1 {
-    align-self: flex-start;
+    
     background-color: #f76707;
     border-radius: 20rem;
 }
 
-.online-learning-image1::after {
-    content: "";
+.element {
     display: block;
     position: absolute;
     border: 2px solid #333;
-    width: 40%;
-    height: 60%;
+    width: 80%;
+    height: 30rem;
     left: 5%;
     bottom:5%;
     border-radius: 20rem;
-    z-index: 1;
+    z-index: -1;
 
 }
+
+.image2 {
+  align-self: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
 
  .online-learning-image2 {
     align-self: flex-end;
@@ -213,10 +256,7 @@
     border-radius: 20rem;
  }
 
- .online-learning-image1::after {
-    content: "";
-    
-}
+ 
 
  .circle1 {
     position: absolute;
@@ -225,7 +265,7 @@
     left: 50%;
     bottom: 70%;
     background: #ffd43b;
-    border-radius: 50%;
+    border-radius: 44% 56% 53% 47%;
 
  }
 
@@ -238,7 +278,7 @@
   left: 7%;
   bottom: 0;
   border: 1px solid #333;
-  border-radius: 50%;
+  border-radius: 44% 56% 53% 47%;
 
  } 
 
@@ -249,7 +289,7 @@
     bottom: 10%;
     width: 10rem;
     height: 10rem;
-    border-radius: 50%;
+    border-radius: 44% 56% 53% 47%;
  }
 
  .circle2::after {
@@ -261,7 +301,7 @@
   left: 7%;
   bottom: 0;
   border: 1px solid #333;
-  border-radius: 50%;
+  border-radius: 44% 56% 53% 47%;
   z-index: 1;
 
  } 
@@ -269,11 +309,11 @@
 .circle3 {
   position: absolute;
   background: #1098ad;
-  left: 73%;
-  bottom: 70%;
+  left: 90%;
+  bottom: 65%;
   width: 3rem;
   height: 3rem;
-  border-radius: 50%;
+  border-radius: 44% 56% 53% 47%;
 
 } 
 
@@ -284,7 +324,7 @@
   bottom: 30%;
   width: 3rem;
   height: 3rem;
-  border-radius: 50%;
+  border-radius: 44% 56% 53% 47%;
 
 }
 
@@ -296,7 +336,7 @@
 }
 
 .why-online-learning-heading {
-  font-size: 2.4rem;
+  font-size: 3rem;
   color: #111;
 }
 
@@ -332,7 +372,7 @@
   left: 3%;
   bottom: 20%;
   background: #ffd43b;
-  border-radius: 50%;
+  border-radius: var(--bradius);
 
 }
 
@@ -343,7 +383,7 @@
   bottom: 17%;
   width: 3rem;
   height: 3rem;
-  border-radius: 50%;
+  border-radius: var(--bradius);
 
 }
 
@@ -361,7 +401,7 @@
   color: #862e9c;
   width: 2.4rem;
   height: 2.4rem;
-  border-radius: 50%;
+  border-radius: var(--bradius);
 
 }
 
@@ -376,6 +416,10 @@
   margin: 0;
 }
 
+.online-sub {
+  position: relative;
+  z-index: 1;
+}
 
 
 .online-subject {
@@ -384,29 +428,22 @@
   position: relative;
   background-color: #fff;
   padding-bottom: 3rem;
-  border-top-left-radius: 45%;
-  border-top-right-radius: 45%;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-radius: 50% 50% 2rem 2rem;
   position: relative;
-  z-index: 1;
+
 
 }
 
-.online-subject::after {
-  content: "";
-  display: block;
+.element2 {
   position: absolute;
-  border: 2px solid #333;
+  border: 1px solid #333;
   padding-bottom: 3rem;
-  border-top-left-radius: 45%;
-  border-top-right-radius: 45%;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-radius: 50% 50% 2rem 2rem;
   width: 100%;
-  height: 40rem;
-  left: 5%;
-  bottom: 5%;
+  height: 100%;
+  left: 2%;
+  bottom: 3%;
+  z-index: -1;
 
 }
 
@@ -440,8 +477,13 @@
 .design {
   padding: 0.3rem 1rem;
   color: #1098ad;
-  border-radius: 1rem;
+  border-radius: 5rem;
   background-color: #e3fafc;
+}
+
+.development {
+  color: #f76707;
+  background-color: #fff5f5;
 }
 
 
@@ -541,7 +583,7 @@
   bottom: 55%;
   width: 10rem;
   height: 10rem;
-  border-radius: 50%;
+  border-radius: var(--bradius);
 }
 
 .circle7::after {
@@ -553,7 +595,7 @@ height: 10rem;
 left: 0;
 bottom: 7%;
 border: 1px solid #333;
-border-radius: 50%;
+border-radius: var(--bradius);
 z-index: 1;
 
 } 
@@ -565,7 +607,7 @@ z-index: 1;
   bottom: 55%;
   width: 10rem;
   height: 10rem;
-  border-radius: 50%;
+  border-radius: var(--bradius);
 }
 
 .circle8::after {
@@ -577,7 +619,7 @@ height: 10rem;
 left: 0;
 bottom: 7%;
 border: 1px solid #333;
-border-radius: 50%;
+border-radius: var(--bradius);
 z-index: 1;
 
 } 
@@ -734,7 +776,7 @@ z-index: 1;
     bottom: 30%;
     background: #ffd43b;
     border-radius: 50%;
-    z-index: -2;
+    z-index: 1;
 
  }
 
@@ -805,7 +847,7 @@ z-index: 1;
   line-height: 1.6;
 }
 
-.footer, .logo {
+.footer .logo {
   margin-bottom: 2rem;
 }
 

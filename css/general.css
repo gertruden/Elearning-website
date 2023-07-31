@@ -3,6 +3,9 @@
 
 * {
     text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   
   }
   
@@ -14,11 +17,29 @@
   
   body {
     font-family: "inter" sans-serif;
-    line-height: 1;
+    line-height: 1.5;
     font-weight: 400;
     color: #555;
     overflow-x: hidden;
+    text-decoration: none;
+    font-size: 2rem;
+    overflow-x: hidden;
     
+  }
+
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+
+  :root {
+
+    --bradius :44% 56% 53% 47%;
+
   }
   
   .container {
@@ -86,8 +107,6 @@
     letter-spacing: -0.5px;
     margin-bottom: 3.2rem;
   }
-  
-  
   
   
   

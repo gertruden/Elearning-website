@@ -1,0 +1,251 @@
+@media (max-width: 75em) {
+
+.hero {
+    margin: 0 10rem;
+    }
+    
+    .heading-primary {
+    margin-top: 3rem;
+    }
+    
+    
+    .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid--2-cols {
+        grid-template-columns: repeat(1, 1fr);
+        }
+
+}
+
+@media (max-width:60em) {
+
+.main-nav {
+    padding: 2rem 2rem;
+    }
+    
+    .container {
+    margin: 0 2rem;
+    padding: 5rem 0;
+    
+    }
+
+    .grid--2-colss {
+        grid-template-columns: repeat(1, 1fr);
+        }
+
+    .grid--3-cols {
+    grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .grid--4-cols {
+    margin-top: 10rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    }
+
+.grid--5-cols {
+grid-template-columns: 2fr 1fr 1fr;
+
+} 
+
+    .btn-mobile-nav {
+    display: block;
+    }
+    .menu-button {
+    display: block;
+    margin-top: 0;
+    border-bottom-right-radius: 30%;
+
+    }
+
+    .email-address-one input {
+    width: 25rem;
+    height: 3rem;
+    }
+
+    .hero {
+    padding: 0;
+    margin: 0;
+    }
+
+    .btn-mobile-nav {
+    display: block;
+    margin-top: 0;
+    border-bottom-right-radius: 30%;
+    
+    }
+
+    .main {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    transform: translateX(0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    }
+
+    
+    .help-you-learn-heading {
+    margin-bottom: 5rem;
+    }
+
+    .join-now-container {
+        margin: 3rem 0.5rem; 
+        padding: 3rem;
+    }
+    
+    .join-now-heading {
+    font-size: 2rem;
+    }
+    
+    .join-now-heading::before, .join-now-heading::after {
+    width: 8rem;
+    height: 8rem;  
+    }
+    
+    .circle11,  .circle11::after {
+    width: 8rem;
+    height: 8rem; 
+    }
+    
+    .email-address-one input {
+    width: 30rem;
+    height: 1rem;
+    }
+    
+    .email-address-one a  {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.4rem;
+    }
+
+
+}
+
+@media (max-width: 27em) {
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    font-size: 0.9rem;
+
+}
+
+a:link, a:visited, a:active {
+    font-size: 1.4rem;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+
+.header {
+    padding: 1rem;
+    }
+
+.logo {
+    height: 1rem;
+
+    
+    }
+
+.logo-text {
+    font-size: x-small;
+    }
+
+.main-nav-list {
+    gap: 1rem;
+    }
+
+.log-in, .sign-up {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+
+}
+
+
+.container {
+margin: 1rem 1rem;
+}
+.hero, .heading-primary-one  {
+margin: 0;
+}
+
+.grid--4-cols {
+grid-template-columns: repeat(1, 1fr);
+margin-top: 5rem;
+}
+
+.grid--5-cols {
+    grid-template-columns: 1fr 1fr;
+    
+    } 
+
+.grid--2-colss {
+grid-template-columns: repeat(1, 1fr);
+}
+
+.get-started-button {
+padding: 0.5rem 2rem;
+border-radius: 2rem;
+}
+
+.decor1, .decor2, .decor3 {
+    width: 2rem;
+    height: 0.5rem;
+}
+
+.verification  {
+flex-wrap: wrap;
+
+}
+
+.verification-content ion-icon {
+width: 1rem;
+height: 1rem;
+padding: 0.3rem;
+}
+
+.join-now-container {
+    margin: 3rem 0.5rem; 
+    padding: 3rem;
+}
+
+.join-now-heading {
+font-size: 1rem;
+}
+
+.join-now-heading::before, .join-now-heading::after {
+width: 5rem;
+height: 5rem;  
+}
+
+.circle11,  .circle11::after {
+width: 5rem;
+height: 5rem; 
+}
+
+.email-address-one input {
+width: 15rem;
+height: 0.5rem;
+}
+
+.email-address-one a  {
+padding: 0.3rem 1rem;
+font-size: 1rem;
+}
+
+.follow-us {
+    grid-template-columns: 1 -1;
+}
+
+}

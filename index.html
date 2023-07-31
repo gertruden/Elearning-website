@@ -24,20 +24,24 @@
     <div class="header-container">
         <header class="header">
           <nav class="main-nav">
+            <button class="btn-mobile-nav"><ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon></button>
             <div class="logo">
                 <span class="inside-logo">L</span>
                 <p class="logo-text">LEARNING</p>
             </div>
             <div>
               <ul class="main-nav-list main">
+                
                 <li><a href="#" class="main-nav-link">Home</a></li>
-                <li><a href="#" class="main-nav-link">Class<ion-icon name="chevron-down"></ion-icon></a></li>
+                <li><a href="#" class="main-nav-link nav-active"><p>Class</p><ion-icon name="chevron-down"></ion-icon></a></li>
                 <li><a href="#" class="main-nav-link">Pricing</a></li>
                 <li><a href="#" class="main-nav-link">About us</a></li>
               </ul>
             </div>
             <div>
               <ul class="main-nav-list contact">
+                 
                 <li><a href="#" class="main-nav-link log-in">Log in</a></li>
                 <li><a href="#" class="main-nav-link sign-up">Sign up</a></li>
               </ul>
@@ -56,9 +60,9 @@
                     <p class="play-video">Play Video</p></p>
                 </div>
                 <div class="verification">
-                    <p class="verification-content"><ion-icon name="ribbon"></ion-icon>Experience mentor</p>
-                    <p class="verification-content"><ion-icon name="ribbon"></ion-icon>Quality videos</p>
-                    <p class="verification-content"><ion-icon name="ribbon"></ion-icon>Affordable prices</p>
+                    <p class="verification-content"><ion-icon name="checkmark-outline"></ion-icon>Experience mentor</p>
+                    <p class="verification-content"><ion-icon name="checkmark-outline"></ion-icon>Quality videos</p>
+                    <p class="verification-content"><ion-icon name="checkmark-outline"></ion-icon>Affordable prices</p>
                 </div>
                 <div class="deco1"></div>
                 <div class="deco2"></div>
@@ -67,8 +71,16 @@
 
             </div>
             <div class="online-learning-images">
+              <div class="image1">
                 <img src="img/Untitled.png" class="online-learning-image1" alt="">
+                <div class="element img1"></div>
+              </div>
+              <div class="image2">
                 <img src="img/Untitled.png" class="online-learning-image2" alt="">
+                <div class="element img2"></div>
+              </div>
+                
+
                 <div class="circle1"></div>
                 <div class="circle2"></div>
                 <div class="circle3"></div>
@@ -128,6 +140,8 @@
           Help you learn with online class
         </h1>
         <div class="container grid grid--3-cols">
+
+          <div class="online-sub">
           <div class="online-subject">
             <img src="img/image1.jpg" class="online-subject-img" alt="">
             <div class="online-subject-theory">
@@ -160,8 +174,11 @@
                 <div class="see-details-words"><span>$124</span>/24 video</div>
               </div>
             </div>
-            
           </div>
+          <div class="element2"></div>
+          </div>
+
+          <div class="online-sub">
           <div class="online-subject">
             <img src="img/image2.jpg" class="online-subject-img" alt="">
             <div class="online-subject-theory">
@@ -194,42 +211,46 @@
                 <div class="see-details-words"><span>$320</span>/24 video</div>
               </div>
             </div>
-            
           </div>
-          <div class="online-subject">
-            <img src="img/image1.jpg" class="online-subject-img" alt="">
-            <div class="online-subject-theory">
-              <div class="design-rating">
-                <p class="design">DESIGN</p>
-                <div class="rating">
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                </div>
-              </div>
-              <h3 class="online-subject-heading">5 basic programming CSS</h3>
-              <div class="online-subject-commenting">
-                <div class="subject-profile">
-                  <img src="img/profile.png" class="view" alt="">
-                  <div class="subject-profile-content">
-                    <h4 class="william-serif">William Serif</h4>
-                    <p>Mentor</p>
+          <div class="element2"></div>
+          </div>
+          <div class="online-sub">
+            <div class="online-subject">
+              <img src="img/image1.jpg" class="online-subject-img" alt="">
+              <div class="online-subject-theory">
+                <div class="design-rating">
+                  <p class="design development">DEVELOPMENT</p>
+                  <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
                   </div>
                 </div>
-                <div class="members">
-                  <ion-icon name="people"></ion-icon>
-                  <p>328 members</p>
+                <h3 class="online-subject-heading">5 basic programming CSS</h3>
+                <div class="online-subject-commenting">
+                  <div class="subject-profile">
+                    <img src="img/profile.png" class="view" alt="">
+                    <div class="subject-profile-content">
+                      <h4 class="william-serif">William Serif</h4>
+                      <p>Mentor</p>
+                    </div>
+                  </div>
+                  <div class="members">
+                    <ion-icon name="people"></ion-icon>
+                    <p>328 members</p>
+                  </div>
                 </div>
-              </div>
-              <div class="see-details">
-                <a href="#" class="see-details-btn">See Details</a>
-                <div class="see-details-words"><span>$234</span>/24 video</div>
-              </div>
+                <div class="see-details">
+                  <a href="#" class="see-details-btn">See Details</a>
+                  <div class="see-details-words"><span>$234</span>/24 video</div>
+                </div>
+              </div>        
             </div>
-            
+            <div class="element2"></div>
           </div>
+
         </div>
       </div>
       
