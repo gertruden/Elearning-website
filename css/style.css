@@ -202,7 +202,8 @@
   height: 1rem;
   background-color: #ffd43b;
   top: 30%;
-  border-radius: 50% / 87% 89% 0% 0% ;
+  border-radius: 87% 89% 0% 0% ;
+  
 }
 
 .online-learning-images {
@@ -341,7 +342,7 @@
 }
 
 .why-online-learning-start {
-  line-height: 3;
+  line-height: 1.6;
   
 }
 
@@ -428,9 +429,9 @@
   position: relative;
   background-color: #fff;
   padding-bottom: 3rem;
-  border-radius: 50% 50% 2rem 2rem;
+  border-radius: 45% 45% 2rem 2rem;
   position: relative;
-
+  font-size: 1.4rem;
 
 }
 
@@ -464,7 +465,7 @@
 }
 
 .online-subject-theory {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .design-rating {
@@ -477,7 +478,7 @@
 .design {
   padding: 0.3rem 1rem;
   color: #1098ad;
-  border-radius: 5rem;
+  border-radius: 40%;
   background-color: #e3fafc;
 }
 
@@ -498,7 +499,7 @@
 }
 
 .online-subject-heading {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 700;
 
 }
@@ -516,6 +517,7 @@
   display: flex;
   gap: 1rem;
   padding: 1rem 0;
+  font-size: 1rem;
 }
 
 .view {
@@ -530,12 +532,13 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-size: 1rem;
 
 }
 
 .members ion-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   color: #4c6ef5;
 }
 
@@ -546,11 +549,11 @@
 }
 
 .see-details-btn {
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 2rem;
   background-color: #4c6ef5;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
 }
 
 .see-details-words span {
@@ -650,16 +653,16 @@ z-index: 1;
 
 /***********BENEFITS OF LEARNING ONLINE************/
 
-.benefits-of-learning-list {
-  /* display: flex;
+.benefits-of-learning-list{
+  display: flex;
   flex-direction: column;
-  gap: 2rem; */
+  gap: 1rem;
 }
 
 .benefits-of-learning-item {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
 
 }
@@ -667,29 +670,42 @@ z-index: 1;
 .benefits-of-learning-item ion-icon {
  
   color: #fff;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: #ffd43b;
   padding: 1rem;
-  border-radius: 50%;
+  border-radius: var(--bradius)
 }
 
 
 .benefits-of-learning-item p {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
-.benefits-of-learning-img {
-  clip-path: polygon(10% 30%, 90% 5%, 100% 80%, 20% 100%);
+.benefits-of-learning-img-container {
+  position: relative;
+}
 
+
+.benefits-of-learning-img {
+  clip-path: url(#shape);
+    position: relative;
 }
 
 .benefits-of-learning-img img {
-  width: 50rem;
-  height: 30rem;
+  display: block;
+  width: 100%;
   object-fit: cover;
 }
+
+.svg-container {
+  position: absolute;
+  width: 95%;
+  bottom: 15%;
+  left: 15%;
+}
+
 
 .quotes {
   position: absolute;
@@ -705,8 +721,83 @@ z-index: 1;
   
 }
 
+.circle12 {
+  width: 10rem;
+  height: 10rem;
+  border-radius: var(--bradius);
+  background-color: #f76707;
+  position: absolute;
+  right: -5%;
+  top: 50%;
+  z-index: -3;
+
+}
+
+.circle13 {
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--bradius);
+  background-color: #5637b0;
+  position: absolute;
+  right: 0%;
+  top: 10%;
+  z-index: -3;
+
+}
+
+.circle14 {
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--bradius);
+  background-color: #ffd43b;
+  position: absolute;
+  right: -5%;
+  top: 40%;
+  z-index: -3;
+
+}
+
+
+
 
 /************WHAT STUDENTS SAY ABOUT US***********/
+
+
+.why-online-learning-container1 {
+  clip-path: url(#shape2);
+  position: relative;
+}    
+
+
+.svg-container2 {
+  position: absolute;
+  width: 100%;
+  bottom: 15%;
+  left: 10%;
+  z-index: 1;
+}
+
+
+.why-scrolls ion-icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+ 
+  background-color: #fff;
+  color: #4c6ef5;
+  border-radius: 50%;
+  box-shadow: 0 2.4rem 3rem 3rem rgba(0, 0, 0, 0.075);
+ 
+}
+
+.why-scrolls {
+  position: absolute;
+  display: flex;
+  right: 0%;
+  bottom: 0%;
+  gap: 2rem;
+  
+}
 
 .profile {
   width: 6rem;
@@ -734,6 +825,7 @@ z-index: 1;
   background-color: #4c6ef5;
   margin: 0 7rem;
   z-index: -2;
+  overflow: hidden;
 }
 
 .join-now-heading {
@@ -772,11 +864,11 @@ z-index: 1;
     position: absolute;
     width: 10rem;
     height: 10rem;
-    right: 1%;
+    left: 93%;
     bottom: 30%;
     background: #ffd43b;
     border-radius: 50%;
-    z-index: 1;
+    z-index: -3;
 
  }
 
@@ -807,11 +899,12 @@ z-index: 1;
 .email-address-one a {
   position: absolute;
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 5rem;
   background-color: #4c6ef5;
-  right: 5%;
-  top: 20%;
+  right: 3%;
+  top: 19%;
+  font-size: 1.4;
 }
 
 /**********FOOTER**********/

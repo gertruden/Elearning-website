@@ -242,6 +242,7 @@ height: 5rem;
 .email-address-one input {
 width: 15rem;
 height: 0.5rem;
+font-size: 0.7rem;
 }
 
 .email-address-one a  {
@@ -250,8 +251,18 @@ font-size: 1rem;
 }
 
 .follow-us {
-    grid-template-columns: 1 -1;
+    grid-column: 1/-1;
+    
 }
+
+.svg-container {
+    bottom: 35%;
+}
+
+.why-online-learning-container1 {
+    grid-row-start: 2;
+}
+
 
 
 

@@ -62,6 +62,11 @@
     grid-template-columns: 1fr 2fr;
     gap: 10rem;
   }
+
+  .grid--2-colsss {
+    grid-template-columns: 2fr fr;
+    gap: 10rem;
+  }
   
   .grid--3-cols {
     grid-template-columns: repeat(3, 1fr);
