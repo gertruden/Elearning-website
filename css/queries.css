@@ -128,6 +128,9 @@ grid-template-columns: 2fr 1fr 1fr;
     font-size: 1.4rem;
     }
 
+    .why-online-learning-container {
+        grid-row: 2;
+    }
 
 }
 
@@ -255,13 +258,11 @@ font-size: 1rem;
     
 }
 
-.svg-container {
+.svg-cont  {
     bottom: 35%;
 }
 
-.why-online-learning-container1 {
-    grid-row-start: 2;
-}
+
 
 
 

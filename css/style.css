@@ -71,12 +71,23 @@
     color: #4c6ef5;
 }
 
+.log-in:hover,
+.log-in:active {
+  color: #fff;
+  background-color: #4c6ef5;
+}
+
 .sign-up {
     padding: 1rem 2rem;
     border-radius: 2rem;
     background-color: #4c6ef5;
     color: #fff;
+}
 
+.sign-up:hover,
+.sign-up:active {
+  color: #4c6ef5;
+  background-color: #fff;
 }
 
 .btn-mobile-nav {
@@ -125,9 +136,16 @@
 
 .get-started-button {
     padding: 1rem 4rem;
-    border-radius: 2rem;
+    border-radius: 4rem;
     background-color: #4c6ef5;
     color: #fff;
+
+}
+
+.get-started-button:hover,
+.get-started-button:active {
+  color: #4c6ef5;
+  background-color: #fff;
 }
 
 .play-button ion-icon {
@@ -329,6 +347,10 @@
 
 }
 
+.why-online-learning-container {
+  position: relative;
+}
+
 .why-online-learning {
   background-color: #fff;
   position: relative;
@@ -429,7 +451,7 @@
   position: relative;
   background-color: #fff;
   padding-bottom: 3rem;
-  border-radius: 45% 45% 2rem 2rem;
+  border-radius: 200px 200px 2rem 2rem;
   position: relative;
   font-size: 1.4rem;
 
@@ -439,7 +461,7 @@
   position: absolute;
   border: 1px solid #333;
   padding-bottom: 3rem;
-  border-radius: 50% 50% 2rem 2rem;
+  border-radius: 200px 200px 2rem 2rem;
   width: 100%;
   height: 100%;
   left: 2%;
@@ -556,13 +578,19 @@
   font-size: 0.8rem;
 }
 
+.see-details-btn:hover,
+.see-details-btn:active {
+  color: #4c6ef5;
+  background-color: #fff;
+}
+
 .see-details-words span {
   font-size: 1.4rem;
   color: #4c6ef5;
   font-weight: 600;
 }
 
-.help-you-learn-icons ion-icon {
+.help-scroll {
   width: 2rem;
   height: 2rem;
   padding: 1rem;
@@ -570,6 +598,12 @@
   color: #4c6ef5;
   border-radius: 50%;
  
+}
+
+.help-scroll:hover,
+.help-scroll:active {
+  color: #fff;
+  background-color: #4c6ef5;
 }
 
 .help-you-learn-icons {
@@ -699,7 +733,7 @@ z-index: 1;
   object-fit: cover;
 }
 
-.svg-container {
+.svg-cont {
   position: absolute;
   width: 95%;
   bottom: 15%;
@@ -709,17 +743,20 @@ z-index: 1;
 
 .quotes {
   position: absolute;
- ;
-  padding: 1rem;
+  color: white;
+  padding: 0.2rem;
+  font-size: 9rem;
   background-color: #5637b0;
+  border-radius: var(--bradius);
+  width: 20%;
+  height: 10rem;
+  display: flex;
+  right: 0%;
+  top: 0%;
+  justify-content: center;
+  z-index: 3;
 }
 
-.quotes i {
-  color: #fff;
-  width: 2.4rem;
-  height: 2.4rem;
-  
-}
 
 .circle12 {
   width: 10rem;
@@ -769,7 +806,7 @@ z-index: 1;
 }    
 
 
-.svg-container2 {
+.svg-cont2 {
   position: absolute;
   width: 100%;
   bottom: 15%;
@@ -778,7 +815,7 @@ z-index: 1;
 }
 
 
-.why-scrolls ion-icon {
+.why-scroll {
   width: 2rem;
   height: 2rem;
   padding: 1rem;
@@ -788,6 +825,12 @@ z-index: 1;
   border-radius: 50%;
   box-shadow: 0 2.4rem 3rem 3rem rgba(0, 0, 0, 0.075);
  
+}
+
+.why-scroll:hover,
+.why-scroll:active {
+  background-color: #4c6ef5;
+  color: #fff;
 }
 
 .why-scrolls {
